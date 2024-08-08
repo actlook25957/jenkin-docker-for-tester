@@ -68,4 +68,9 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./backend-testing/report:/etc/newman/newman
+      
+  frontend_test_playwright:
+    build: ./playwright
+    volumes:
+      - ./frontend-test-playwright-report:/app/report
     
